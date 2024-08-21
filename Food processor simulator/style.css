@@ -1,0 +1,16 @@
+#procesor{
+    border: orangered solid 10px;
+}
+span{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+input[type=button],input[type=text],input[type=number]{
+    width: 200px;
+    background-color: red;
+    color: white;
+}
+input[type=button]:hover,input[type=text]:hover,input[type=number]:hover{
+    transform: scale(1.1);
+    transition: 200ms;
+}

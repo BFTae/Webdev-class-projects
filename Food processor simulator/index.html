@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malakser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="float: left;"><img id="procesor" src="Procesor jedzenny.png" alt="Malakser" height="600px">
+    </div>
+    <div style="float: left;"><h1>Instrukcja obsługi:</h1>
+    <form>
+    <input type="radio" name="onoff" value="on">Włącz urządzenie <input type="radio" name="onoff" value="off" checked="checked">Wyłącz urządzenie<br>
+    Podane napięcie: <input type="range" min="0" max="400" value="230"><span>230</span>V<br>
+    <input type="button" name="napraw" value="Napraw urządzenie"><br>
+    <input type="button" name="wymiary" value="Podaj wymiary"><br>
+    <input type="button" name="status" value="Wypisz status"><br>
+    <input type="text" name="skladnik" placeholder="Np. marchew"><input type="number" name="obj" min="1" step="1" placeholder="np. 100">Wprowadź nazwę i objętość [ml] dodawanego składnika<br>
+    <input type="button" name="dodaj" value="Dodaj składnik"><input type="button" name="usunall" value="Wyrzuć wszystko z malaksera"><br>
+    <input type="button" name="wyczysc" value="Wyczyść malakser"><br>
+    <input type="button" name="malaksuj" value="Rozdrobnij, krój, siekaj!">
+    </form>
+    </div>
+    <br>
+    <div style="clear: both;"><span></span></div>
+    <script src="script.js"></script>
+</body>
+</html>

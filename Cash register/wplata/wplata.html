@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasa</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="wplata.css">
+</head>
+<body>
+    <div>
+        <div class="menu" style="background-color: red;"><a href="../wyplata/wyplata.html"><div>Wypłata</div></a></div>
+        <div class="menu" style="background-color: aqua;"><a href="../inwentaryzacja/inwentaryzacja.html"><div>Inwentaryzacja</div></a></div>
+        <div class="menu" style="background-color: gray;"><a href="../raport/raport.html"><div>Raport</div></a></div>
+    </div>
+    <br>
+    <div id="formularz">
+        <form action="wplata.php" method="post">
+        <span id="errors"></span>
+        Kwota do wpłacenia: <br><input required type="number" name="kwota_dw" min="0.01" step="0.01" placeholder="Podaj kwotę...">zł<br>
+        Kwota wkładana do kasy:<br><input required type="number" name="kwota_dk" min="0.01" step="0.01" placeholder="Podaj kwotę...">zł<br>
+        Czy chcesz wpisać kwotę nominałami?<input type="checkbox" name="ifbanknotami"><br>
+        <div id="divbank">
+            <span id="banknotami">
+                
+            </span>
+        </div><br>
+        Do wydania: <br><input type="number" name="change" id="change" readonly>zł<br>
+        <input name="sub" type="submit" value="Wpłać" style="color: lime; background-color: gray;">
+        </form>
+    </div>
+    
+    <script src="wplata.js"></script>
+</body>
+</html>

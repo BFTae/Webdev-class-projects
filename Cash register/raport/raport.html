@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasa</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="raport.css">
+</head>
+<body>
+    <div>
+        <div class="menu" style="background-color: lime;"><a href="../wplata/wplata.html"><div>Wpłata</div></a></div>
+        <div class="menu" style="background-color: red;"><a href="../wyplata/wyplata.html"><div>Wypłata</div></a></div>
+        <div class="menu" style="background-color: aqua;"><a href="../inwentaryzacja/inwentaryzacja.html"><div>Inwentaryzacja</div></a></div>
+    </div>
+    <br>
+    <div id="formularz">
+        <form action="raport.php" method="post">
+            Przedział czasowy: <input type="datetime-local" name="od"> - <input type="datetime-local" name="do"><br>
+            Pokazuj: <ul>
+                <li>Wpłaty<input type="checkbox" name="wplaty" checked></li>
+                <li>Wypłaty<input type="checkbox" name="wyplaty" checked></li>
+            </ul>
+            <input type="submit" value="Wygeneruj" style="color: gray; background-color: black;">
+        </form>
+        <script src="raport.js"></script>
+    </div>
+    
+</body>
+</html>
